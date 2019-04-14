@@ -2,9 +2,21 @@
   "name": "Speech Buddy",
   "version": "0.0.0",
   "description": "Universal website control through voice commands",
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "tabs", "<all_urls>"
+  ],
+  "web_accessible_resources": [
+    "main.js",
+    "router.js",
+    "commands/browser-commands.js",
+    "modal/modal.js",
+    "modal/modal.styles.js"
+  ],
   "manifest_version": 2
 }
