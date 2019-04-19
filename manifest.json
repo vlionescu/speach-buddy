@@ -14,9 +14,10 @@
   "web_accessible_resources": [
     "main.js",
     "router.js",
+    "selectors/form-selectors.js",
     "commands/browser-commands.js",
     "modal/modal.js",
-    "modal/modal.styles.js"
+    "styles/modal.styles.js"
   ],
   "manifest_version": 2
 }
